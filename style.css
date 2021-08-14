@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-image:url("bg.jpg");
+	font-family:Helvetica, Arial;
+	margin:0;
+}
+
+.navbar {
+	display:flex;
+	background-color:green;
+	top:0;
+}
+
+.navbar a {
+	color:white;
+	padding:15px 20px;
+	text-decoration:none;
+	text-align:center;
+}
+
+.navbar a:hover {
+	background-color:white;
+	color:black;
+}
+
+.title-image {
+	width:auto;
+	height:auto;
+	max-width:100%
+	border:20px 20px white;
+}
+
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	font-family: Helvetica;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.mySlides {
+	display: none;
+	box-shadow: 0 0 20px 10px #f6dfb5;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-family: Helvetica;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	font-family: Helvetica;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.row {
+	display:flex;
+	flex-wrap:wrap;
+	margin:5px;
+}
+	
+.sidebar {
+	flex:30%;
+	background-color:antiquewhite;
+	padding:20px;
+	text-align:justify;
+	box-shadow: 0 0 10px 5px #f6dfb5;
+}
+	
+.main-content {
+	flex:70%;
+	color:white;
+	background-color:green;
+	padding:20px;
+	text-align:justify;
+	box-shadow: 0 0 10px 5px #f6dfb5;
+}
+
+.cards {
+	display:inline-block;
+	padding:5px;
+}
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+.footer {
+	text-align:center;
+	color:lightgray;
+}
+
+.question {
+	font-weight: 600;
+	font-family:Helvetica;
+	padding:20px;
+}
+.answers {
+	margin-bottom: 20px;
+}
+.answers label {
+	display: block;
+	background-color:white;
+	opacity:80%;
+	padding:20px;
+}
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: green;
+	color: white;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	margin-left: 5px;
+}
+#submit:hover{
+	background-color: #33cc33;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@media (max-width:700px) {
+	.row .navbar {
+		flex-direction:column;
+	}
+}
